@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device/asus/sdm660-common" name="wimbiyoashizkia/platform_device_asus_common.git" remote="github" revision="asus-common" />
+ <project path="device/asus/X00TD" name="wimbiyoashizkia/platform_device_asus_X00TD.git" remote="github" revision="lineage-17.1" />
+ <project path="vendor/asus" name="wimbiyoashizkia/platform_vendor_asus_X00TD.git" remote="github" revision="lineage-17.1" />
+ <project path="kernel/asus/sdm660" name="wimbiyoashizkia/platform_kernel_asus_X00TD.git" remote="github" revision="lineage-17.1" />
+ 
+</manifest>
