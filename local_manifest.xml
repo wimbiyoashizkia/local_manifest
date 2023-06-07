@@ -2,21 +2,22 @@
 <manifest>
     <remote name="neonproject-org" fetch="https://github.com/neonproject-org" />
 
+    <!-- Hardware Tree -->
+    <remove-project name="LineageOS/android_hardware_qcom_audio" />
+    <remove-project name="LineageOS/android_hardware_qcom_display" />
+    <remove-project name="LineageOS/android_hardware_qcom_media" />
+
+    <project path="hardware/qcom/audio" name="android_hardware_qcom_audio.git" remote="neonproject-org" revision="13" />
+    <project path="hardware/qcom/media" name="android_hardware_qcom_media.git" remote="neonproject-org" revision="13" />
+    <project path="hardware/qcom/display" name="android_hardware_qcom_display.git" remote="neonproject-org" revision="13" />
+
     <!-- Device Tree -->
     <project path="device/asus/X00TD" name="platform_device_asus_X00TD.git" remote="neonproject-org" revision="13" />
 
     <!-- Vendor Tree -->
-    <project path="vendor/asus" name="proprietary_vendor_asus_X00TD.git" remote="neonproject-org" revision="13" />
+    <project path="vendor/asus" name="proprietary_vendor_asus_X00TD.git" remote="neonproject-org" revision="13" clone-depth="1" />
 
     <!-- Kernel Tree -->
-    <project path="kernel/asus/sdm660" name="platform_kernel_asus_sdm660.git" remote="neonproject-org" revision="sdm660-test" />
-
-    <!-- Hardware Tree -->
-    <remove-project name="LineageOS/android_hardware_qcom_media" />
-    <remove-project name="LineageOS/android_hardware_qcom_audio" />
-    <remove-project name="LineageOS/android_hardware_qcom_display" />
-    <project path="hardware/qcom/audio" name="android_hardware_qcom_audio.git" remote="neonproject-org" revision="13" />
-    <project path="hardware/qcom/media" name="android_hardware_qcom_media.git" remote="neonproject-org" revision="13" />
-    <project path="hardware/qcom/display" name="android_hardware_qcom_display.git" remote="neonproject-org" revision="13" />
+    <project path="kernel/asus/sdm660" name="platform_kernel_asus_sdm660.git" remote="neonproject-org" revision="sdm660-test" clone-depth="1" />
 
 </manifest>
